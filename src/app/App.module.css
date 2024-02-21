@@ -1,0 +1,13 @@
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 375px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  margin: 0 auto;
+}
+
+.pageContainer {
+  flex-grow: 1;
+}

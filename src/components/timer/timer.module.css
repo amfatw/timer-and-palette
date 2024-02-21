@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.text {
+  font-size: 20px;
+  margin: 0;
+}
+
+.input {
+  width: 100px;
+  padding: 10px 15px;
+  flex-shrink: 0;
+  
+  font-size: 20px;
+  text-align: center;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.input[type='number'] {
+  -moz-appearance: textfield;
+}
