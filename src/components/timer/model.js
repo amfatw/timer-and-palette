@@ -9,7 +9,7 @@ import {
 
 const $startTime = createStore(null)
 const $currentTime = createStore(null)
-const $timeToTrack = createStore(null)
+export const $timeToTrack = createStore(null)
 
 // оставшееся время высчитывается из времени начала, текущего и отслеживаемого.
 // если таймер ещё не запускали, то это null. в остальных случаях число.

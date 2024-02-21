@@ -2,7 +2,7 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 
 import { Navigation } from 'components/navigation/navigation'
 import { TimerPage } from 'pages/timer/timer-page'
-import { PalletePage } from 'pages/pallete/pallete-page'
+import { PalletePage } from 'pages/palette/palette-page'
 import styles from './app.module.css'
 
 
@@ -12,7 +12,7 @@ export const App = () => {
       <div className={styles.pageContainer}>
       <Routes>
         <Route path='/timer' element={<TimerPage/>}/>
-        <Route path='/pallete' element={<PalletePage/>}/>
+        <Route path='/palette' element={<PalletePage/>}/>
         <Route path='*' element={<Navigate to='/timer'/>}/>
       </Routes>
       </div>

@@ -20,9 +20,9 @@ export const Navigation = () => {
 
         <li>
           <Link
-            name='Pallere'
-            to='/pallete'
-            isCurrent={pathname === '/pallete'}
+            name='Palette'
+            to='/palette'
+            isCurrent={pathname === '/palette'}
           />
         </li>
       </ul>

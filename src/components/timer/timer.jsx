@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useUnit } from 'effector-react'
 
-import { $timeLeft, startTimer } from 'states/timer'
+import { $timeLeft, $timeToTrack, startTimer } from './model'
 import styles from './timer.module.css'
 import {config} from './config'
 import { getTimeStringFromMs } from 'utils/getTimeStringFromMs'
@@ -11,7 +11,6 @@ import { getMsFromMinutes } from 'utils/getMsFromMinutes'
 export const Timer = () => {
   const [value, setValue] = useState('')
 
-  
   const timeLeftInMs = useUnit($timeLeft)
   let textToDisplay = ''
   if (timeLeftInMs < 0) textToDisplay = 'Готово'
@@ -23,6 +22,8 @@ export const Timer = () => {
     start(getMsFromMinutes(value))
     setValue('')
   }
+
+  const timeToTrack = useUnit($timeToTrack)
 
   return (
     <div className={styles.container}>
